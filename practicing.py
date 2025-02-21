@@ -213,7 +213,7 @@ print(media)"""
 # permitindo que o usuário digite o salário inicial do funcionário.
 
 
-"""contador = 1
+contador = 1
 salario = 1000
 anos = 30
 percentual = 0.015
@@ -224,7 +224,7 @@ while contador <= anos:
     contador += 1
     percentual *= 2
 
-print(salario)"""
+print(salario)
 
 contador = 1
 salario = 1000
@@ -261,3 +261,49 @@ while ano <= ano_atual:
 # Exibir o salário final
 print(f"O salário do funcionário no ano de {ano_atual} é: R$ {salario:.2f}")
 
+"""
+
+lista = [2, True, 1.2, "danilo", []]
+
+for elem in lista:
+    print(ele)"""
+
+"""
+profs = ["Danilo", "yan", "marcelo", "caio", "andre", "jessica"]
+
+for i in range(len(profs)):
+    if profs[i] == 'andre':
+        print("pai ta on")
+        print(i)
+"""
+"""pos = 1
+for i in profs:
+    if i == "andre":
+        print("ola")
+        print(pos)
+    else:
+        pos += 1"""
+
+
+"""profs = ["Danilo", "yan", "marcelo", "caio", "andre", "jessica"]
+
+materias = ["python", "edge", "front/web", "sw/tx", "blablabla", "calculo"]
+
+
+for i in range(len(profs)):
+    if profs[i] == "andre":
+        print(f"andre ensina{materias[i]}")
+for i in range(len(profs)):
+    print(f"o {profs[i]} ensina {materias[i]}")
+    """
+
+"""lista = []
+for i in range (11):
+    lista.append(i)
+print(lista)
+"""
+"""
+lista = [1,2,3,4,5,6]
+
+for i in range(len(lista)):"""
+  h   
