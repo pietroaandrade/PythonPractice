@@ -213,7 +213,7 @@ print(media)"""
 # permitindo que o usuário digite o salário inicial do funcionário.
 
 
-contador = 1
+"""contador = 1
 salario = 1000
 anos = 30
 percentual = 0.015
@@ -257,7 +257,7 @@ while ano <= ano_atual:
     aumento_percentual *= 2
     # Avançar para o próximo ano
     ano += 1
-
+"""
 # Exibir o salário final
 print(f"O salário do funcionário no ano de {ano_atual} é: R$ {salario:.2f}")
 
@@ -306,4 +306,3 @@ print(lista)
 lista = [1,2,3,4,5,6]
 
 for i in range(len(lista)):"""
-  h   

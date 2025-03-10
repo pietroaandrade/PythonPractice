@@ -99,7 +99,6 @@ def chess_board(chess_matrix):
     return
 """
 
-def make_circle(matriz):
     
 
 
