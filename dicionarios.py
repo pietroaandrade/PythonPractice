@@ -158,3 +158,37 @@ for key in dic_2.keys():
         dic_3[key] = dic_2[key]
 
 print(dic_3)"""
+
+#Encontra info carros
+
+def forca_opcao(opcoes, msg):
+    possibilidades = '\n'.join(opcoes)
+    opcao = input(f"{msg}\n{possibilidades}\n->")
+    while opcao not in opcoes:
+        print("opcao invalida")
+        opcao = input(f"{msg}\n{possibilidades}\n->")
+
+    return opcao
+def acha_indice(lista, elem):
+    for i in range(len(lista)):
+        if elem == lista[i]:
+            return i
+    return False
+
+dic = {
+    'modelo' : ['uno', 'kombi', 'fox'],
+    'potencia' : ['450', '30', '50'],
+    'preco' : ['100', '30', '50'],
+    'ano' : ['2003', '1977', '2014'],
+}
+
+indices = {dic["modelo"][i] : i for i in range(len(dic["modelo"]))}
+
+carro = forca_opcao(dic["modelo"],"qual carro voce quer?")
+#indice = acha_indice(dic['modelo'], carro)
+indice = indices[carro]
+for key in dic.keys():
+    print(f"{key} : {dic[key][indice]}")
+
+
+#in memory db / list comprehension
