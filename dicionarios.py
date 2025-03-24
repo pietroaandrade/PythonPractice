@@ -63,13 +63,7 @@ print(f"Seu melhore numero:{numero}" )
     "telefone": '',
 
 }
-pede_dados = {
-    "nome" : 'Qual seu nome?',
-    "nascimento": 'Qual seu nascimento?',
-    "endereco": 'Qual seu endereco?',
-    "telefone": 'Qual seu telefone?',
 
-}
 
 #Atribui a lista --> Q&A
 for key in dados.keys():
@@ -84,7 +78,7 @@ print(dados)"""
 
 
 #Cria dicionario com chave par e impar, cada chave coloca na lista com cada num par e impar repectivamente
-par_impar = {
+"""par_impar = {
     'par' : [],
     'impar' : []
 }
@@ -94,4 +88,73 @@ for i in range(20):
         par_impar['par'].append(i)
     else:
         par_impar['impar'].append(i)
-print(pd.DataFrame(par_impar))
+print(pd.DataFrame(par_impar))"""
+
+
+#Itens em comum e adicionar a terceira lista
+"""dic_1 = {
+    "nome" : 'Pietro',
+    "nascimento": '2006',
+    "endereco": 'atibaia',
+    "telefone": '190857376',
+}
+dic_2 = {
+    "nome" : 'Pietro',
+    "nascimento": '2006',
+    "endereco": 'atibaia',
+    "telefone": '11994731578',
+}
+dic_3 = {}
+
+#Junta no valor da chave
+for keys in dic_1.keys():
+    for key in dic_2.keys():
+        if dic_1[keys] == dic_2[key]:
+            dic_3[keys] = dic_2[key]
+print(dic_3)"""
+
+#Lista em comum, justar no mesmo dicionario
+"""dic_1 = {
+    "nome" : ['Pietro','Joao'],
+    "nascimento": ['2006',"2004"],
+    "endereco": ['atibaia','SP'],
+    "telefone": ['908357376', '1199467536'],
+}
+dic_2 = {
+    "nome" : ['Arthur', 'Pedro'],
+    "nascimento": ['2007','2016'],
+    "endereco": ['Ourinhos', 'Itatiba'],
+    "telefone": ['11994731578','5151435664'],
+}
+dic_3 = {
+
+}
+
+for key_1 in dic_1.keys():
+    if key_1 in dic_2.keys():
+        dic_3[key_1] = dic_1[key_1] + dic_2[key_1]
+print(dic_3)"""
+
+
+#Adiciona chaves unicas de cada lista para a terceira lista
+"""dic_1 = {
+    "nome" : ['Pietro','Joao'],
+    "endereco": ['atibaia','SP'],
+    "telefone": ['908357376', '1199467536'],
+}
+dic_2 = {
+    "nome" : ['Arthur', 'Pedro'],
+    "nascimento": ['2007','2016'],
+    "telefone": ['11994731578','5151435664'],
+}
+dic_3 = {
+
+}
+for keys in dic_1.keys():
+    if keys not in dic_2.keys():
+        dic_3[keys] = dic_1[keys]
+for key in dic_2.keys():
+    if key not in dic_1.keys():
+        dic_3[key] = dic_2[key]
+
+print(dic_3)"""
