@@ -1,6 +1,6 @@
 import random
 import pandas as pd
-"""
+
 dic = {'chave' : 'valor'}
 
 #Printa dicionario (chave e valor)
@@ -34,9 +34,9 @@ print(random.choice(saudacoes[resposta]))
 #2nd way to print
 aleatorio = random.randint(0, len(saudacoes[resposta])-1)
 print(saudacoes[resposta][aleatorio])
-"""
+
 #Numero de telefone
-"""numeros = {
+numeros = {
     'um' : '1',
     'dois' : '2',
     'tres' : '3',
@@ -53,10 +53,10 @@ for i in range(9):
     num = input(f"Diga seu {i+1} numero do seu telefone")
     numero += numeros[num]
 print(f"Seu melhore numero:{numero}" )
-"""
+
 
 #Peca nome, data de nascimento, endereco e telefone para o usuario e guarde-os no dicionario
-"""dados = {
+dados = {
     "nome": '',
     "nascimento": '',
     "endereco": '',
@@ -73,12 +73,12 @@ for key in dados.keys():
 for key in dados.keys():
     dados[key] = [dados[key]]
 
-print(dados)"""
+print(dados)
 
 
 
 #Cria dicionario com chave par e impar, cada chave coloca na lista com cada num par e impar repectivamente
-"""par_impar = {
+par_impar = {
     'par' : [],
     'impar' : []
 }
@@ -88,11 +88,11 @@ for i in range(20):
         par_impar['par'].append(i)
     else:
         par_impar['impar'].append(i)
-print(pd.DataFrame(par_impar))"""
+print(pd.DataFrame(par_impar))
 
 
 #Itens em comum e adicionar a terceira lista
-"""dic_1 = {
+dic_1 = {
     "nome" : 'Pietro',
     "nascimento": '2006',
     "endereco": 'atibaia',
@@ -111,10 +111,10 @@ for keys in dic_1.keys():
     for key in dic_2.keys():
         if dic_1[keys] == dic_2[key]:
             dic_3[keys] = dic_2[key]
-print(dic_3)"""
+print(dic_3)
 
 #Lista em comum, justar no mesmo dicionario
-"""dic_1 = {
+dic_1 = {
     "nome" : ['Pietro','Joao'],
     "nascimento": ['2006',"2004"],
     "endereco": ['atibaia','SP'],
@@ -133,11 +133,11 @@ dic_3 = {
 for key_1 in dic_1.keys():
     if key_1 in dic_2.keys():
         dic_3[key_1] = dic_1[key_1] + dic_2[key_1]
-print(dic_3)"""
+print(dic_3)
 
 
 #Adiciona chaves unicas de cada lista para a terceira lista
-"""dic_1 = {
+dic_1 = {
     "nome" : ['Pietro','Joao'],
     "endereco": ['atibaia','SP'],
     "telefone": ['908357376', '1199467536'],
@@ -157,7 +157,7 @@ for key in dic_2.keys():
     if key not in dic_1.keys():
         dic_3[key] = dic_2[key]
 
-print(dic_3)"""
+print(dic_3)
 
 #Encontra info carros
 
