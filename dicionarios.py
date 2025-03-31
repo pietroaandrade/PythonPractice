@@ -1,4 +1,4 @@
-import random
+"""import random
 import pandas as pd
 
 dic = {'chave' : 'valor'}
@@ -189,6 +189,24 @@ carro = forca_opcao(dic["modelo"],"qual carro voce quer?")
 indice = indices[carro]
 for key in dic.keys():
     print(f"{key} : {dic[key][indice]}")
-
+"""
 
 #in memory db / list comprehension
+
+emojis = {
+    ":)" : "😄",
+    ";)" : "😉",
+    ":o" : "😮"
+}
+
+
+def get_emoji(frase):
+    for key in emojis.keys():
+        frase = frase.replace(key, emojis[key])
+    print(f"{frase}")
+    return
+
+
+
+frase = input("Escreva seu emoji favorito: ")
+get_emoji(frase)
