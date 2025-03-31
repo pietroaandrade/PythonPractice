@@ -158,7 +158,7 @@ for key in dic_2.keys():
         dic_3[key] = dic_2[key]
 
 print(dic_3)
-
+"""
 #Encontra info carros
 
 def forca_opcao(opcoes, msg):
@@ -210,3 +210,4 @@ def get_emoji(frase):
 
 frase = input("Escreva seu emoji favorito: ")
 get_emoji(frase)
+"""
