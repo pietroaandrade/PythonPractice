@@ -109,3 +109,8 @@ for palavra in frase:
     else:
         palavras[palavra] +=1
 print(palavras)
+
+
+
+
+
