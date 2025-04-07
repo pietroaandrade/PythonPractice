@@ -21,3 +21,6 @@ def estoque(dic):
 
 
 estoque(makes)
+
+
+
